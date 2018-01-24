@@ -98,7 +98,60 @@ body {
   animation: fadeIn 1s;
 }
 
-
 /****** Index ******/
 
 
+/****** Post ******/
+
+.post-box {
+  padding: 0 3rem;
+}
+
+.postheader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.postheader h1 {
+  margin: 1em 0 0.7em 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+.postheader time {
+  display: block;
+  margin: 1em 0;
+}
+
+
+/****** Markdown ******/
+.kg-card-markdown {
+  line-height: 1.7
+}
+
+.kg-card-markdown h1,
+.kg-card-markdown h2,
+.kg-card-markdown h3,
+.kg-card-markdown h4,
+.kg-card-markdown h5,
+.kg-card-markdown h6 {
+  font-weight: bold;
+}
+
+.kg-card-markdown h1,
+.kg-card-markdown h2,
+.kg-card-markdown h3 {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.kg-card-markdown p {
+  margin-bottom: 15px;
+}
+
+.kg-card-markdown img {
+  width: 100%;
+}
+
+.post-box .kg-card-markdown img[src$="#full"] {
+  margin: 0 -58px;
+  width: calc(100% + 116px);
+}
