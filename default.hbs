@@ -22,6 +22,7 @@
 
 <link rel="stylesheet" href={{asset "css/normalize.css"}}>
 <link rel="stylesheet" href={{asset "css/bootstrap.css"}}>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
 <link rel="stylesheet" href={{asset "css/style.css"}}>
 
 <!-- Modernizr -->
@@ -49,10 +50,6 @@
 
 <!-- RSS -->
 
-<!-- Syntax Highlight -->
-
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
-
 <!-- Ghost Head -->
 
 {{ghost_head}}
@@ -67,9 +64,28 @@
 
 <!-- JavaScript -->
 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+window.fbAsyncInit = function() {
+  FB.init({
+    appId            : FACEBOOK_APP_ID,
+    autoLogAppEvents : true,
+    xfbml            : true,
+    version          : 'v2.11'
+  });
+};
+
+(function(d, s, id){
+   var js, fjs = d.getElementsByTagName(s)[0];
+   if (d.getElementById(id)) {return;}
+   js = d.createElement(s); js.id = id;
+   js.src = "https://connect.facebook.net/en_US/sdk.js";
+   fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));
+</script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 <script src={{asset "js/functions.js"}}></script>
 
 <!--[if lt IE 9 ]>

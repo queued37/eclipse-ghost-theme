@@ -72,6 +72,12 @@ hr {
   background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8c8c, #f0f0f0);
 }
 
+li.inline-list, li.inline-list>ul {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
 /* Container */
 .main-box {
   width: 75%;
@@ -98,6 +104,7 @@ hr {
   text-decoration: none;
   background: #fff;
   color: #282828;
+  transition: color .2s, background-color .2s;
 }
 .btn:hover {
   text-decoration: none;
@@ -105,6 +112,17 @@ hr {
 }
 .btn:focus{
   text-decoration: none;
+}
+
+.btn.tag, .btn.social {
+  margin: 4px 5px;
+  padding: 4px 8px;
+  font-size: 12px;
+  text-transform: uppercase; 
+}
+.btn.tag:hover, .btn.social:hover {
+  background-color: #d9d9d9;
+  color: inherit;
 }
 
 /****** Index ******/
@@ -116,20 +134,47 @@ hr {
   padding: 0 3rem;
 }
 
-.postheader {
+.post-header {
   text-align: center;
   margin-bottom: 4rem;
 }
-.postheader h1 {
+.post-header h1 {
   margin: 1em 0 0.7em 0;
   font-size: 28px;
   font-weight: bold;
 }
-.postheader time {
+.post-header time {
   display: block;
   margin: 1em 0;
 }
 
+/* footer */
+.post-tags-share {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.post-tags {
+  flex: 1;
+}
+
+/*
+.post-author-info {
+  display: flex;
+}
+.post-author-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 1000px;
+}
+.post-author-text {
+  margin-left: 20px;
+}
+.post-author-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+*/
 
 /****** Markdown ******/
 

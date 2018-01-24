@@ -4,35 +4,63 @@
 {{#post}}
 <article role="article" itemscope itemtype="http://schema.org/Article">
 
-<header class="postheader">
-<h1 itemprop="headline">{{title}}</h1>
-<time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='YYYY.MM.DD'}}</time>
+<header class="post-header">
+  <h1 itemprop="headline">{{title}}</h1>
+  <time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='YYYY.MM.DD'}}</time>
 </header>
 
 {{content}}
-{{#if tags}}
-<div class="tags">
-Tags: {{tags separator=" | "}}
-</div>
-{{/if}}
-<div class="share">
-<h4>Share this post:</h4>
-<ul>
-<li><a class="icon-twitter" target="_blank" href="http://twitter.com/share?text={{title}}&amp;url={{url absolute="true"}}">Twitter</a></li>
-<li><a class="icon-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u={{url absolute="true"}}">Facebook</a></li>
-<li><a class="icon-gplus" target="_blank" href="https://plus.google.com/share?url={{url absolute="true"}}">Google+</a></li>
-</ul>
-</div>
-{{#if author}}
+
+<hr>
 <footer>
-<address itemscope itemtype="http://schema.org/Person">
-{{#if author.profile_image}}<div><img src="{{author.profile_image}}" itemprop="image" alt="{{author.name}}" /></div>{{/if}}
-<p>{{author.name}}</p>
-{{#if author.website}}<p>Website: <a href="{{author.website}}" itemprop="url">{{author.website}}</a></p>{{/if}}
-</address>
-{{#if author.bio}}<div><p>{{author.bio}}</p></div>{{/if}}
-</footer>
+
+<div class="post-tags-share" style="display:flex;">
+
+<div class="post-tags">
+{{#if tags}}
+<li class="inline-list">
+{{#foreach tags}}
+<ul><a class="btn tag" href="{{url}}">{{name}}</a></ul><!--
+-->{{/foreach}}
+</li>
 {{/if}}
+</div>
+
+<div class="post-share">
+<li class="inline-list">
+  <ul><a class="btn social" target="_blank" href="http://twitter.com/share?text={{title}}&amp;url={{url absolute="true"}}"><i class="fab fa-twitter"></i></a></ul><!--
+  --><ul><a class="btn social" id="facebook-share"><i class="fab fa-facebook"></i></a></ul><!--
+  --><ul><a class="btn social" target="_blank" href="https://plus.google.com/share?url={{url absolute="true"}}"><i class="fab fa-google-plus"></i></a></ul>
+</li>
+</div>
+
+<!-- Facebook share -->
+<script>
+document.getElementById('facebook-share').onclick = function() {
+  FB.ui({
+    method: 'share',
+    display: 'popup',
+    href: '{{url absolute="true"}}',
+  }, function(response){});
+}
+</script>
+
+</div>
+
+<!--
+{{#if author}}
+<address class="post-author-info" itemscope itemtype="http://schema.org/Person">
+  {{#if author.profile_image}}<img class="post-author-image" src="{{author.profile_image}}" itemprop="image" alt="{{author.name}}" />{{/if}}
+  <div class="post-author-text">
+    <div class="post-author-name">{{author.name}}</div>
+    {{#if author.website}}<div class="post-author-website">Website: <a href="{{author.website}}" itemprop="url">{{author.website}}</a></div>{{/if}}
+    {{#if author.bio}}<div class="post-author-bio">{{author.bio}}</div>{{/if}}
+  </div>
+</address>
+{{/if}}
+-->
+
+</footer>
 </article>
 {{/post}}
 {{#if pagination}}{{{pagination}}}{{/if}}
