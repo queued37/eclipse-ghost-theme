@@ -1,0 +1,100 @@
+/****** Definition ******/
+/* Typography */
+
+/* 
+ * NanumSquare, NanumSquareRound
+ * Copyright (c) 2010, NAVER Corporation (http://www.nhncorp.com) 
+ */
+ 
+@font-face {
+    font-family: 'NanumSquare';
+    src: url('../fonts/NanumSquareL.eot');
+    src: url('../fonts/NanumSquareL.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NanumSquareL.woff2') format('woff2'),
+        url('../fonts/NanumSquareL.woff') format('woff'),
+        url('../fonts/NanumSquareL.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NanumSquare';
+    src: url('../fonts/NanumSquareR.eot');
+    src: url('../fonts/NanumSquareR.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NanumSquareR.woff2') format('woff2'),
+        url('../fonts/NanumSquareR.woff') format('woff'),
+        url('../fonts/NanumSquareR.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NanumSquare';
+    src: url('../fonts/NanumSquareB.eot');
+    src: url('../fonts/NanumSquareB.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NanumSquareB.woff2') format('woff2'),
+        url('../fonts/NanumSquareB.woff') format('woff'),
+        url('../fonts/NanumSquareB.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('../fonts/NanumSquareRoundL.eot');
+    src: url('../fonts/NanumSquareRoundL.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NanumSquareRoundL.woff2') format('woff2'),
+        url('../fonts/NanumSquareRoundL.woff') format('woff'),
+        url('../fonts/NanumSquareRoundL.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('../fonts/NanumSquareRoundR.eot');
+    src: url('../fonts/NanumSquareRoundR.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NanumSquareRoundR.woff2') format('woff2'),
+        url('../fonts/NanumSquareRoundR.woff') format('woff'),
+        url('../fonts/NanumSquareRoundR.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('../fonts/NanumSquareRoundB.eot');
+    src: url('../fonts/NanumSquareRoundB.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NanumSquareRoundB.woff2') format('woff2'),
+        url('../fonts/NanumSquareRoundB.woff') format('woff'),
+        url('../fonts/NanumSquareRoundB.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+/****** Global ******/
+
+body {
+  background: #1a1f25;
+  font-family: NanumSquareRound;
+  font-weight: normal;
+}
+
+
+/****** Main ******/
+
+.main-box {
+  width: 75%;
+  max-width: 850px;
+  margin: 4rem auto;
+  background: #fff;
+  color: #383838;
+  padding: 2em;
+  border-radius: 3px;
+  box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);
+
+  animation: fadeIn 1s;
+}
