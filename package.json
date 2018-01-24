@@ -1,0 +1,20 @@
+{
+  "name": "eclipse-ghost-theme",
+  "version": "0.1.0",
+  "description": "Eclipse ghost theme",
+  "engines": {
+    "ghost": "^1.0.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "queued37",
+    "email": "queued37@gmail.com"
+  },
+  "license": "ISC",
+  "config": {
+    "posts_per_page": 10
+  }
+}
