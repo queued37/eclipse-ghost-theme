@@ -1,6 +1,6 @@
 {{!< default}}
 
-<section class="main post-box" role="main">
+<section class="content-box" role="main">
 {{#post}}
 <article role="article" itemscope itemtype="http://schema.org/Article">
 
@@ -16,7 +16,9 @@
 {{/if}}
 </header>
 
-{{content}}
+<section class="post-body">
+  {{content}}
+</section>
 
 <hr>
 <footer>
@@ -71,6 +73,6 @@ document.getElementById('facebook-share').onclick = function() {
 </article>
 {{/post}}
 {{#if pagination}}{{{pagination}}}{{/if}}
-</section>
 
 {{> footer}}
+</section>

@@ -83,13 +83,13 @@ li.inline-list, li.inline-list>ul {
 }
 
 /* Container */
-.main-box {
+.content-box {
   width: 75%;
   max-width: 850px;
   margin: 6rem auto;
   background: #fff;
   color: #383838;
-  padding: 30px;
+  padding: 30px 60px;
   border-radius: 3px;
   box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);
 
@@ -133,10 +133,6 @@ li.inline-list, li.inline-list>ul {
 
 
 /****** Post ******/
-
-.post-box {
-  padding: 0 30px;
-}
 
 .post-header {
   text-align: center;
@@ -223,7 +219,7 @@ li.inline-list, li.inline-list>ul {
   width: 100%;
 }
 
-.post-box .kg-card-markdown img[src$="#full"] {
+.post-body .kg-card-markdown img[src$="#full"] {
   margin: 0 -60px;
   width: calc(100% + 120px);
 }
