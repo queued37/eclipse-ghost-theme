@@ -232,7 +232,7 @@ li.inline-list, li.inline-list>ul {
 /* Blockquote */
 .kg-card-markdown blockquote {
   padding: 0.5em 1em;
-  margin: 0;
+  margin: 0 0 15px;
   font-size: inherit;
   color: rgba(56, 56, 56, .8);
   font-style: italic;
