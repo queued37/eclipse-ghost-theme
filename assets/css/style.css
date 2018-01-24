@@ -89,7 +89,7 @@ li.inline-list, li.inline-list>ul {
   margin: 6rem auto;
   background: #fff;
   color: #383838;
-  padding: 2em;
+  padding: 30px;
   border-radius: 3px;
   box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);
 
@@ -135,7 +135,7 @@ li.inline-list, li.inline-list>ul {
 /****** Post ******/
 
 .post-box {
-  padding: 0 3rem;
+  padding: 0 30px;
 }
 
 .post-header {
@@ -150,6 +150,16 @@ li.inline-list, li.inline-list>ul {
 .post-header time {
   display: block;
   margin: 1em 0;
+}
+
+.post-header .feature-image {
+  padding: 10em 6em;
+  margin: -30px -60px 0 -60px;
+  background-color: rgba(0,0,0,0.6);
+  background-blend-mode: multiply;
+  background-position: center center;
+  background-size: cover;
+  color: #efefef;
 }
 
 /* footer */
@@ -214,8 +224,8 @@ li.inline-list, li.inline-list>ul {
 }
 
 .post-box .kg-card-markdown img[src$="#full"] {
-  margin: 0 -58px;
-  width: calc(100% + 116px);
+  margin: 0 -60px;
+  width: calc(100% + 120px);
 }
 
 /* Table */
