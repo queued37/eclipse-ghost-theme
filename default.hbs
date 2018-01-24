@@ -49,6 +49,12 @@
 
 <!-- RSS -->
 
+<!-- Syntax Highlight -->
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+
+<!-- Ghost Head -->
+
 {{ghost_head}}
 
 </head>
@@ -62,12 +68,16 @@
 <!-- JavaScript -->
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 <script src={{asset "js/functions.js"}}></script>
 
 <!--[if lt IE 9 ]>
 <script src={{asset "js/polyfills/selectivizr.min.js"}}></script>
 <script src={{asset "js/polyfills/respond-1.1.0.min.js"}}></script>
 <![endif]-->
+
+<!-- Ghost Foot -->
 
 {{ghost_foot}}
 

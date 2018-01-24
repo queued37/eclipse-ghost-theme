@@ -1,42 +1,10 @@
-/****** Definition ******/
+/****** Definitions ******/
 
 /* Typography */
-
 /* 
  * NanumSquare, NanumSquareRound
  * Copyright (c) 2010, NAVER Corporation (http://www.nhncorp.com) 
  */
- 
-@font-face {
-    font-family: 'NanumSquare';
-    src: url('../fonts/NanumSquareL.eot');
-    src: url('../fonts/NanumSquareL.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/NanumSquareL.woff2') format('woff2'),
-        url('../fonts/NanumSquareL.woff') format('woff'),
-        url('../fonts/NanumSquareL.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'NanumSquare';
-    src: url('../fonts/NanumSquareR.eot');
-    src: url('../fonts/NanumSquareR.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/NanumSquareR.woff2') format('woff2'),
-        url('../fonts/NanumSquareR.woff') format('woff'),
-        url('../fonts/NanumSquareR.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'NanumSquare';
-    src: url('../fonts/NanumSquareB.eot');
-    src: url('../fonts/NanumSquareB.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/NanumSquareB.woff2') format('woff2'),
-        url('../fonts/NanumSquareB.woff') format('woff'),
-        url('../fonts/NanumSquareB.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'NanumSquareRound';
@@ -60,11 +28,11 @@
 }
 @font-face {
     font-family: 'NanumSquareRound';
-    src: url('../fonts/NanumSquareRoundB.eot');
-    src: url('../fonts/NanumSquareRoundB.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/NanumSquareRoundB.woff2') format('woff2'),
-        url('../fonts/NanumSquareRoundB.woff') format('woff'),
-        url('../fonts/NanumSquareRoundB.ttf') format('truetype');
+    src: url('../fonts/NanumSquareEB.eot');
+    src: url('../fonts/NanumSquareEB.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NanumSquareEB.woff2') format('woff2'),
+        url('../fonts/NanumSquareEB.woff') format('woff'),
+        url('../fonts/NanumSquareEB.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -77,11 +45,28 @@
 
 
 /****** Global ******/
-
 body {
   background: #1a1f25;
   font-family: NanumSquareRound;
   font-weight: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  transition: color .2s;
+}
+
+a:hover {
+  color: #ff4136;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  opacity: .8;
+  margin: 2em 0;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8c8c, #f0f0f0);
 }
 
 /* Container */
@@ -123,10 +108,17 @@ body {
 
 
 /****** Markdown ******/
+
+/* Basic styling */
 .kg-card-markdown {
   line-height: 1.7
 }
 
+.kg-card-markdown p {
+  margin-bottom: 15px;
+}
+
+/* Headings */
 .kg-card-markdown h1,
 .kg-card-markdown h2,
 .kg-card-markdown h3,
@@ -143,10 +135,7 @@ body {
   margin-bottom: 20px;
 }
 
-.kg-card-markdown p {
-  margin-bottom: 15px;
-}
-
+/* Image */
 .kg-card-markdown img {
   width: 100%;
 }
@@ -154,4 +143,65 @@ body {
 .post-box .kg-card-markdown img[src$="#full"] {
   margin: 0 -58px;
   width: calc(100% + 116px);
+}
+
+/* Table */
+.kg-card-markdown table {
+  width: 100%;
+  line-height: 2.0;
+}
+
+.kg-card-markdown tbody {
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+}
+
+/* Blockquote */
+.kg-card-markdown blockquote {
+  padding: 0.5em 1em;
+  margin: 0;
+  font-size: inherit;
+  color: rgba(56, 56, 56, .8);
+  font-style: italic;
+  border-left: 5px solid #383838;
+}
+
+/* Footnote */
+.kg-card-markdown .footnote-ref a,
+.kg-card-markdown .footnote-backref {
+  text-decoration: none;
+}
+
+/* Code */
+.kg-card-markdown :not(pre) code {
+  font-size: .8em;
+  color: #444;
+  background-color: #f5f5f5;
+  border: 1px solid #cccccc;
+}
+
+.kg-card-markdown pre {
+  padding: 0;
+  margin: 0 0 15px 0;
+  font-size: .9em;
+  background: none;
+  border: 0;
+}
+
+.kg-card-markdown .hljs {
+  background-color: #43423b;
+  padding: 1.2em;
+}
+
+.kg-card-markdown kbd {
+  margin: 0 1px;
+  padding: 2px 6px;
+  font-size: .8em;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
 }
