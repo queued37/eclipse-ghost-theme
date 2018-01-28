@@ -1,8 +1,8 @@
 {{!< default}}
 
-<section class="content-box" role="main">
+<main class="post content-box">
 {{#post}}
-<article role="article" itemscope itemtype="http://schema.org/Article">
+<article itemscope itemtype="http://schema.org/Article">
 
 <header class="post-header">
 {{#if feature_image}}
@@ -16,9 +16,9 @@
 {{/if}}
 </header>
 
-<section class="post-body">
+<div class="post-body" itemprop="articleBody">
   {{content}}
-</section>
+</div>
 
 <hr>
 <footer>
@@ -27,20 +27,26 @@
 
 <div class="post-tags">
 {{#if tags}}
-<li class="inline-list">
+<ul class="inline-list" role="group" aria-label="Tags">
 {{#foreach tags}}
-<ul><a class="btn tag" href="{{url}}">{{name}}</a></ul><!--
+<li><a class="btn tag" href="{{url}}">{{name}}</a></li><!--
 -->{{/foreach}}
-</li>
+</ul>
 {{/if}}
 </div>
 
 <div class="post-share">
-<li class="inline-list">
-  <ul><a class="btn social" target="_blank" href="http://twitter.com/share?text={{title}}&amp;url={{url absolute="true"}}"><i class="fab fa-twitter"></i></a></ul><!--
-  --><ul><a class="btn social" id="facebook-share"><i class="fab fa-facebook"></i></a></ul><!--
-  --><ul><a class="btn social" target="_blank" href="https://plus.google.com/share?url={{url absolute="true"}}"><i class="fab fa-google-plus"></i></a></ul>
-</li>
+<ul class="inline-list" role="group" aria-label="Share">
+  <li><a class="btn social" target="_blank" href="http://twitter.com/share?text={{title}}&amp;url={{url absolute="true"}}" title="Share on Twitter">
+    <i title="Share on Twitter" class="fab fa-twitter"></i>
+  </a></li><!--
+  --><li><a class="btn social" id="facebook-share" title="Share on Facebook">
+    <i title="Share on Facebook" class="fab fa-facebook"></i>
+  </a></li><!--
+  --><li><a class="btn social" target="_blank" href="https://plus.google.com/share?url={{url absolute="true"}}" title="Share on Google+">
+    <i title="Share on Google+" class="fab fa-google-plus"></i>
+  </a></li>
+</ul>
 </div>
 
 <!-- Facebook share -->
@@ -58,12 +64,12 @@ document.getElementById('facebook-share').onclick = function() {
 
 <!--
 {{#if author}}
-<address class="post-author-info" itemscope itemtype="http://schema.org/Person">
+<address class="post-author-info" itemprop="author" itemscope itemtype="http://schema.org/Person">
   {{#if author.profile_image}}<img class="post-author-image" src="{{author.profile_image}}" itemprop="image" alt="{{author.name}}" />{{/if}}
   <div class="post-author-text">
     <div class="post-author-name">{{author.name}}</div>
     {{#if author.website}}<div class="post-author-website">Website: <a href="{{author.website}}" itemprop="url">{{author.website}}</a></div>{{/if}}
-    {{#if author.bio}}<div class="post-author-bio">{{author.bio}}</div>{{/if}}
+    {{#if author.bio}}<div class="post-author-bio" itemprop="description">{{author.bio}}</div>{{/if}}
   </div>
 </address>
 {{/if}}
@@ -72,7 +78,6 @@ document.getElementById('facebook-share').onclick = function() {
 </footer>
 </article>
 {{/post}}
-{{#if pagination}}{{{pagination}}}{{/if}}
 
 {{> footer}}
-</section>
+</main>
