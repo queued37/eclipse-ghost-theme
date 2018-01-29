@@ -1,4 +1,4 @@
-/****** Definitions ******/
+/** Definitions **/
 
 /* Typography */
 /* 
@@ -7,27 +7,27 @@
  */
 
 @font-face {
-    font-family: 'NanumSquareRound';
-    src: url('../fonts/NanumSquareRoundL.eot');
-    src: url('../fonts/NanumSquareRoundL.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/NanumSquareRoundL.woff2') format('woff2'),
-        url('../fonts/NanumSquareRoundL.woff') format('woff'),
-        url('../fonts/NanumSquareRoundL.ttf') format('truetype');
+    font-family: 'NanumSquare';
+    src: url('../fonts/NanumSquareL.eot');
+    src: url('../fonts/NanumSquareL.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NanumSquareL.woff2') format('woff2'),
+        url('../fonts/NanumSquareL.woff') format('woff'),
+        url('../fonts/NanumSquareL.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
-    font-family: 'NanumSquareRound';
-    src: url('../fonts/NanumSquareRoundR.eot');
-    src: url('../fonts/NanumSquareRoundR.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/NanumSquareRoundR.woff2') format('woff2'),
-        url('../fonts/NanumSquareRoundR.woff') format('woff'),
-        url('../fonts/NanumSquareRoundR.ttf') format('truetype');
+    font-family: 'NanumSquare';
+    src: url('../fonts/NanumSquareR.eot');
+    src: url('../fonts/NanumSquareR.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NanumSquareR.woff2') format('woff2'),
+        url('../fonts/NanumSquareR.woff') format('woff'),
+        url('../fonts/NanumSquareR.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'NanumSquareRound';
+    font-family: 'NanumSquare';
     src: url('../fonts/NanumSquareEB.eot');
     src: url('../fonts/NanumSquareEB.eot?#iefix') format('embedded-opentype'),
         url('../fonts/NanumSquareEB.woff2') format('woff2'),
@@ -43,16 +43,19 @@
   100% { opacity: 1; }
 }
 
+/*****************************************************************************/
 
-/****** Global ******/
+/** Global **/
 body {
   background: #1a1f25;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  font-family: NanumSquareRound;
+  font-family: "PT Sans", "NanumSquare";
   font-weight: normal;
+  line-height: 1.85;
+  text-align: justify;
 }
 
 a {
@@ -140,7 +143,6 @@ ul.inline-list, ul.inline-list>li {
 }
 .post-header h1 {
   margin: 1em 0 0.7em 0;
-  font-size: 28px;
   font-weight: bold;
 }
 .post-header time {
@@ -189,10 +191,6 @@ ul.inline-list, ul.inline-list>li {
 /****** Markdown ******/
 
 /* Basic styling */
-.kg-card-markdown {
-  line-height: 1.7
-}
-
 .kg-card-markdown p {
   margin-bottom: 15px;
 }
