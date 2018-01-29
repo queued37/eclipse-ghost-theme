@@ -1,0 +1,23 @@
+{{!< default}}
+
+<main class="post-list content-box" role="main">
+  <header>
+    <h1>All posts</h1>
+    <a class="btn" href="/">
+      <i title="Home" class="fas fa-home fa-fw"></i>
+    </a>
+  </header>
+
+  {{#get "posts" limit="10" as |posts| }}
+  <ul>
+    {{#foreach posts}}
+    <li>
+      <h2 class="post-item-title"><a href="{{url}}">{{title}}</a></h2>
+      <div class="post-item-excerpt">{{excerpt}}</div>
+    </li>
+    {{/foreach}}
+  </ul>
+
+  {{#if pagination}}{{{pagination}}}{{/if}}
+  {{/get}}
+</main>
