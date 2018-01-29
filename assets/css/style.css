@@ -1,42 +1,4 @@
 /** Definitions **/
-
-/* Typography */
-/* 
- * NanumSquare, NanumSquareRound
- * Copyright (c) 2010, NAVER Corporation (http://www.nhncorp.com) 
- */
-
-@font-face {
-    font-family: 'NanumSquare';
-    src: url('../fonts/NanumSquareL.eot');
-    src: url('../fonts/NanumSquareL.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/NanumSquareL.woff2') format('woff2'),
-        url('../fonts/NanumSquareL.woff') format('woff'),
-        url('../fonts/NanumSquareL.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'NanumSquare';
-    src: url('../fonts/NanumSquareR.eot');
-    src: url('../fonts/NanumSquareR.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/NanumSquareR.woff2') format('woff2'),
-        url('../fonts/NanumSquareR.woff') format('woff'),
-        url('../fonts/NanumSquareR.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'NanumSquare';
-    src: url('../fonts/NanumSquareEB.eot');
-    src: url('../fonts/NanumSquareEB.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/NanumSquareEB.woff2') format('woff2'),
-        url('../fonts/NanumSquareEB.woff') format('woff'),
-        url('../fonts/NanumSquareEB.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
 /* Animation */
 @keyframes fadeIn {
   0% { opacity: 0; }
@@ -52,7 +14,7 @@ body {
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  font-family: "PT Sans", "NanumSquare";
+  font-family: "PT Sans";
   font-weight: normal;
   line-height: 1.85;
   text-align: justify;
