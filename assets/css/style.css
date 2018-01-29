@@ -14,7 +14,7 @@ body {
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: normal;
   line-height: 1.85;
   text-align: justify;
