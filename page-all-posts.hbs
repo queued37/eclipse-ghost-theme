@@ -11,9 +11,14 @@
   {{#get "posts" limit="10" as |posts| }}
   <ul>
     {{#foreach posts}}
-    <li>
-      <h2 class="post-item-title"><a href="{{url}}">{{title}}</a></h2>
-      <div class="post-item-excerpt">{{excerpt}}</div>
+    <li class="post-item">
+      {{#if feature_image}}
+      <div class="post-item-image" style="background-image: url({{feature_image}})"></div>
+      {{/if}}
+      <div class="post-item-text">
+        <h2 class="post-item-title"><a href="{{url}}">{{title}}</a></h2>
+        <div class="post-item-excerpt">{{excerpt}}</div>
+      </div>
     </li>
     {{/foreach}}
   </ul>

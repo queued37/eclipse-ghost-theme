@@ -115,16 +115,34 @@ ul.inline-list, ul.inline-list>li {
   padding: 0;
 }
 .post-list li {
-  padding: 10px 30px;
+  padding: 10px 10px;
+}
+
+.post-item {
+  display: flex;
+  align-items: center;
+}
+
+.post-item-image {
+  margin-left: 20px;
+  flex-shrink: 0;
+  width: 200px;
+  height: 140px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.post-item-text {
+  margin: 0 20px 10px 20px;
 }
 
 .post-item-title {
   font-weight: bold;
+  margin: 10px 0;
 }
 .post-item-title a {
   text-decoration: none;
 }
-
 .post-item-excerpt {
   color: #777;
 }
