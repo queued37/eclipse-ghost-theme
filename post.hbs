@@ -23,11 +23,11 @@
 <hr>
 <footer>
 
-<div class="post-tags-share" style="display:flex;">
+<div class="post-tags-share">
 
 <div class="post-tags">
 {{#if tags}}
-<ul class="inline-list" role="group" aria-label="Tags">
+<ul class="inline-list" aria-label="Tags">
 {{#foreach tags}}
 <li><a class="btn tag" href="{{url}}">{{name}}</a></li><!--
 -->{{/foreach}}
@@ -36,7 +36,7 @@
 </div>
 
 <div class="post-share">
-<ul class="inline-list" role="group" aria-label="Share">
+<ul class="inline-list" aria-label="Share">
   <li><a class="btn social" target="_blank" href="http://twitter.com/share?text={{title}}&amp;url={{url absolute="true"}}" title="Share on Twitter">
     <i title="Share on Twitter" class="fab fa-twitter"></i>
   </a></li><!--
