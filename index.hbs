@@ -1,7 +1,40 @@
 {{!< default}}
-{{> header}}
 
-<section class="main content-box" role="main">
+{{#is "paged"}}
+
+<main class="post-list content-box">
+
+<header>
+  <h1>All posts</h1>
+  <a class="btn" href="/">
+    <i title="Home" class="fas fa-home fa-fw"></i>
+  </a>
+</header>
+
+<ul>
+  {{#foreach posts}}
+  <li class="post-item">
+    {{#if feature_image}}
+    <div class="post-item-image" style="background-image: url({{feature_image}})">
+      <a href="{{url}}" aria-hidden="true"></a>
+    </div>
+    {{/if}}
+    <div class="post-item-text">
+      <h2 class="post-item-title"><a href="{{url}}">{{title}}</a></h2>
+      <div class="post-item-excerpt">{{excerpt}}</div>
+    </div>
+  </li>
+  {{/foreach}}
+</ul>
+
+{{#if pagination}}{{{pagination}}}{{/if}}
+
+</main>
+
+{{else}}
+
+<main class="content-box">
+
 {{#foreach posts}}
 <article role="article" itemscope itemtype="http://schema.org/Article">
 
@@ -19,4 +52,9 @@
 {{#if pagination}}{{{pagination}}}{{/if}}
 
 {{> footer}}
-</section>
+
+</main>
+
+{{/is}}
+
+
