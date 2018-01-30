@@ -17,7 +17,6 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: normal;
   line-height: 1.85;
-  text-align: justify;
 }
 
 a {
@@ -154,6 +153,7 @@ ul.inline-list, ul.inline-list>li {
   text-decoration: none;
 }
 .post-item-excerpt {
+  text-align: justify;
   color: #777;
 }
 
@@ -181,6 +181,10 @@ ul.inline-list, ul.inline-list>li {
   background-position: center center;
   background-size: cover;
   color: #efefef;
+}
+
+.post-body {
+  text-align: justify;
 }
 
 /* footer */
