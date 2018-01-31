@@ -8,11 +8,17 @@
 {{#if feature_image}}
   <div class="feature-image" style="background-image: url({{feature_image}})">
     <h1 itemprop="headline">{{title}}</h1>
-    <time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='YYYY.MM.DD'}}</time>
+    <time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='DD MMMM, YYYY'}}</time>
+    <div class="post-reading-time">
+      <i class="far fa-clock"></i> <span></span>
+    </div>
   </div>
 {{else}}
   <h1 itemprop="headline">{{title}}</h1>
-  <time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='YYYY.MM.DD'}}</time>
+  <time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='DD MMMM, YYYY'}}</time>
+  <div class="post-reading-time">
+    <i class="far fa-clock"></i> <span></span>
+  </div>
 {{/if}}
 </header>
 
