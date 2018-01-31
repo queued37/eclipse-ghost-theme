@@ -10,12 +10,8 @@ To fully use the features provided by the theme, put this script in `Blog Header
 <style>
 body {
     background-image: url("your_background_image_url");
-    font-family: "PT Sans", "your_font", sans-serif;
+    font-family: "PT Sans", "your_language_font", sans-serif;
 }
 </style>
-
-<script>
-var FACEBOOK_APP_ID = 'your_facebook_app_id';
-</script>
 ```
 
