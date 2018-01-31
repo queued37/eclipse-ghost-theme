@@ -94,7 +94,35 @@ ul.inline-list, ul.inline-list>li {
 }
 
 /*****************************************************************************/
-/** Index **/
+/** Home **/
+.home-full-page {
+  width: 100%;
+  height: 100vh;
+  animation: fadeIn 1s;
+}
+
+.home-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0px;
+  z-index: -1;
+
+  width: 550px;
+  height: 480px;
+  background: #fff;
+  color: #383838;
+  padding: 30px 60px;
+  border-radius: 3px;
+  box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);
+}
+
+.home .content-box {
+  position: relative;  /* It creates a stacking context */
+  animation: none;
+}
+
 
 
 /*****************************************************************************/

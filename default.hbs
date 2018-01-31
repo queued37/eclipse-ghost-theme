@@ -63,16 +63,28 @@
 
 <!-- JavaScript -->
 
+<!-- JQuery -->
 <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- highlight.js -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+<!-- Font Awesome -->
 <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+<!-- FitVids -->
 <script src="{{asset 'js/jquery.fitvids.js'}}"></script>
+{{#is "post"}}
 <script>
   $(document).ready(function(){
     $(".post-body").fitVids();
   });
 </script>
+{{/is}}
+<!-- ScrollMagic -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js
+"></script>
+{{#is "home"}}
+<script src="{{asset 'js/home-scrollmagic.js'}}"></script>
+{{/is}}
 
 <!--[if lt IE 9 ]>
 <script src="{{asset 'js/polyfills/selectivizr.min.js'}}"></script>

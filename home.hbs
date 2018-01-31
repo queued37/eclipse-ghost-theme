@@ -1,6 +1,18 @@
 {{!< default}}
 
-<main class="post-list content-box">
+<main class="home">
+<div class="home-full-page">
+  <section class="home-box">
+
+    {{#if @blog.logo}}<a class="logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
+    <h1 class="blog-title">{{@blog.title}}</h1>
+    <div class="blog-description">{{@blog.description}}</div>
+    <nav>{{navigation}}</nav>
+
+  </section>
+</div>
+
+<section class="post-list content-box">
 
 <header>
   <h1>All posts</h1>
@@ -28,4 +40,5 @@
 {{#if pagination}}{{{pagination}}}{{/if}}
 
 {{> footer}}
+</section>
 </main>
