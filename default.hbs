@@ -71,7 +71,7 @@
 <!-- Font Awesome -->
 <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 <!-- FitVids -->
-<script src="{{asset 'js/jquery.fitvids.js'}}"></script>
+<script src="{{asset 'js/libs/jquery.fitvids.js'}}"></script>
 {{#is "post"}}
 <script>
   $(document).ready(function(){
@@ -85,6 +85,14 @@
 {{#is "home"}}
 <script src="{{asset 'js/home-scrollmagic.js'}}"></script>
 {{/is}}
+<!-- Smooth Scroll -->
+<script src="{{asset 'js/libs/smooth-scroll.polyfills.min.js'}}"></script>
+<script>
+var scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 500,
+  easing: 'easeInOutCubic'
+});
+</script>
 
 <!--[if lt IE 9 ]>
 <script src="{{asset 'js/polyfills/selectivizr.min.js'}}"></script>
