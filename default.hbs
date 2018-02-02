@@ -57,7 +57,7 @@
 
 </head>
 
-<body class="{{body_class}}">
+<body class="{{body_class}}" {{#if @blog.cover_image}}style="background-image: url({{@blog.cover_image}})"{{/if}}>
 
 {{{body}}}
 
