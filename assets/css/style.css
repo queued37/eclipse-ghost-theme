@@ -112,9 +112,24 @@ ul.inline-list, ul.inline-list>li {
   height: 480px;
   background: #fff;
   color: #383838;
-  padding: 30px 60px;
+  padding: 20px 40px;
   border-radius: 3px;
   box-shadow: 0 0 10px 0 rgba(40,40,40,0.3);
+
+  text-align: center;
+}
+
+.blog-logo img {
+  height: 140px;
+}
+.blog-title {
+  margin: 20px 0;
+}
+.home-box hr {
+  margin: 10px 0;
+}
+.blog-description {
+  font-size: 16px;
 }
 
 .home .content-box {
