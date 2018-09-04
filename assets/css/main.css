@@ -1638,8 +1638,7 @@ h6 .small,
   font-size: 75%; }
 
 p {
-  margin: 2px 0 10px;
-  }
+  margin: 0 0 10px; }
 
 .lead {
   margin-bottom: 20px;
@@ -3425,23 +3424,23 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1; }
 
 /* Markdown */
-.kg-card-markdown {
+.post-body {
   font-size: 1.5rem; }
 
-.kg-card-markdown p {
+.post-body p {
   margin-bottom: 1.5rem; }
 
-.kg-card-markdown h1,
-.kg-card-markdown h2,
-.kg-card-markdown h3,
-.kg-card-markdown h4,
-.kg-card-markdown h5,
-.kg-card-markdown h6 {
+.post-body h1,
+.post-body h2,
+.post-body h3,
+.post-body h4,
+.post-body h5,
+.post-body h6 {
   font-weight: bold; }
 
-.kg-card-markdown h1,
-.kg-card-markdown h2,
-.kg-card-markdown h3 {
+.post-body h1,
+.post-body h2,
+.post-body h3 {
   margin-top: 2.5rem;
   margin-bottom: 2rem; }
 
@@ -3488,24 +3487,24 @@ h1, h2, h3, h4, h5, h6 {
   color: inherit; }
 
 /* Image */
-.kg-card-markdown img {
+.post-body img {
   width: 100%; }
 
-.kg-card-markdown img[src$="#full"] {
+.post-body img[src$="#full"] {
   margin: 0 -60px;
   width: calc(100% + 120px); }
 
 /* Table */
-.kg-card-markdown table {
+.post-body table {
   width: 100%;
   line-height: 2.0; }
 
-.kg-card-markdown tbody {
+.post-body tbody {
   border-top: 1px solid #888;
   border-bottom: 1px solid #888; }
 
 /* Blockquote */
-.kg-card-markdown blockquote {
+.post-body blockquote {
   padding: 0.5em 1em;
   margin: 0 0 15px;
   font-size: inherit;
@@ -3514,12 +3513,12 @@ h1, h2, h3, h4, h5, h6 {
   border-left: 5px solid #383838; }
 
 /* Footnote */
-.kg-card-markdown .footnote-ref a,
-.kg-card-markdown .footnote-backref {
+.post-body .footnote-ref a,
+.post-body .footnote-backref {
   text-decoration: none; }
 
 /* Code */
-.kg-card-markdown :not(pre) code {
+.post-body :not(pre) code {
   padding: 2px 4px;
   font-size: .8em;
   color: #444;
@@ -3528,18 +3527,18 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace; }
 
-.kg-card-markdown pre {
+.post-body pre {
   padding: 0;
   margin: 0 0 15px 0;
   font-size: .9em;
   background: none;
   border: 0; }
 
-.kg-card-markdown .hljs {
+.post-body .hljs {
   background-color: #43423b;
   padding: 1.2em; }
 
-.kg-card-markdown kbd {
+.post-body kbd {
   margin: 0 1px;
   padding: 2px 6px;
   font-size: .8em;

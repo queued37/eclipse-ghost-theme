@@ -1,28 +1,28 @@
 // Typography: moved to /assets/scss/base/_typography.scss
 
 /* Image */
-.kg-card-markdown img {
+.post-body img {
   width: 100%;
 }
 
-.kg-card-markdown img[src$="#full"] {
+.post-body img[src$="#full"] {
   margin: 0 -60px;
   width: calc(100% + 120px);
 }
 
 /* Table */
-.kg-card-markdown table {
+.post-body table {
   width: 100%;
   line-height: 2.0;
 }
 
-.kg-card-markdown tbody {
+.post-body tbody {
   border-top: 1px solid #888;
   border-bottom: 1px solid #888;
 }
 
 /* Blockquote */
-.kg-card-markdown blockquote {
+.post-body blockquote {
   padding: 0.5em 1em;
   margin: 0 0 15px;
   font-size: inherit;
@@ -32,13 +32,13 @@
 }
 
 /* Footnote */
-.kg-card-markdown .footnote-ref a,
-.kg-card-markdown .footnote-backref {
+.post-body .footnote-ref a,
+.post-body .footnote-backref {
   text-decoration: none;
 }
 
 /* Code */
-.kg-card-markdown :not(pre) code {
+.post-body :not(pre) code {
   padding: 2px 4px;
   font-size: .8em;
   color: #444;
@@ -48,7 +48,7 @@
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-.kg-card-markdown pre {
+.post-body pre {
   padding: 0;
   margin: 0 0 15px 0;
   font-size: .9em;
@@ -56,12 +56,12 @@
   border: 0;
 }
 
-.kg-card-markdown .hljs {
+.post-body .hljs {
   background-color: #43423b;
   padding: 1.2em;
 }
 
-.kg-card-markdown kbd {
+.post-body kbd {
   margin: 0 1px;
   padding: 2px 6px;
   font-size: .8em;
