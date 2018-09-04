@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #1a1f25;
   background-repeat: no-repeat;
@@ -12,11 +16,11 @@ a {
   transition: color .2s;
 }
 a:hover {
-  color: #ff4136;
+  color: $color-primary;
 }
 a:focus {
-  color: #ff4136;
-  outline-color: #ff4136;
+  color: $color-primary;
+  outline-color: $color-primary;
 }
 
 hr {

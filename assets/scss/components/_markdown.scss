@@ -1,31 +1,11 @@
-/* Basic styling */
-.kg-card-markdown p {
-  margin-bottom: 15px;
-}
-
-/* Headings */
-.kg-card-markdown h1,
-.kg-card-markdown h2,
-.kg-card-markdown h3,
-.kg-card-markdown h4,
-.kg-card-markdown h5,
-.kg-card-markdown h6 {
-  font-weight: bold;
-}
-
-.kg-card-markdown h1,
-.kg-card-markdown h2,
-.kg-card-markdown h3 {
-  margin-top: 25px;
-  margin-bottom: 20px;
-}
+// Typography: moved to /assets/scss/base/_typography.scss
 
 /* Image */
 .kg-card-markdown img {
   width: 100%;
 }
 
-.post-body .kg-card-markdown img[src$="#full"] {
+.kg-card-markdown img[src$="#full"] {
   margin: 0 -60px;
   width: calc(100% + 120px);
 }
