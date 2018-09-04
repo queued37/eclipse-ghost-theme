@@ -6,6 +6,9 @@
     "ghost": "^1.0.0"
   },
   "main": "index.js",
+  "keywords": [
+    "ghost-theme"
+  ],
   "scripts": {
     "compile:scss": "node-sass --source-map true assets/scss -o assets/css",
     "compile:autoprefixer": "postcss assets/css/*.css --use autoprefixer -d assets/css",
