@@ -1,15 +1,18 @@
 // Typography: moved to /assets/scss/base/_typography.scss
 
-/* Image and Gallery */
-.post-body .kg-image-card, .post-body .kg-gallery-card {
+/* Figures */
+.kg-image-card,
+.kg-gallery-card,
+.kg-embed-card {
   margin-bottom: $paragraph-margin;
 }
 
-.post-body .kg-image {
+.kg-image {
   width: 100%;
 }
 
-.post-body .kg-width-wide, .post-body .kg-width-full {
+.kg-width-wide,
+.kg-width-full {
   margin-left: -6rem;
   margin-right: -6rem;
   width: calc(100% + 12rem);
