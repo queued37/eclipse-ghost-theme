@@ -5,6 +5,11 @@
 .kg-gallery-card,
 .kg-embed-card {
   margin-bottom: $paragraph-margin;
+
+  & figcaption {
+    text-align: center;
+    margin: 1rem 0 $paragraph-margin;
+  }
 }
 
 .kg-image {
