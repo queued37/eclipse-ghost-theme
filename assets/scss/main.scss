@@ -14,8 +14,7 @@
 // 3. Base stuff
 @import
   'base/base',
-  'base/typography',
-  'base/helpers';
+  'base/typography';
 
 // 4. Layout-related sections
 // @import
@@ -25,7 +24,8 @@
 // 5. Components
 @import
   'components/button',
-  'components/markdown';
+  'components/markdown',
+  'components/content-box';
 
 // 6. Page-specific styles
 @import
