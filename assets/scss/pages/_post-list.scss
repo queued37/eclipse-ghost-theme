@@ -12,8 +12,8 @@
   padding: 0;
 }
 .post-list li {
-  padding: 10px 10px;
-  margin: 0 20px 10px 20px;
+  padding: 0.75rem 0.75rem;
+  margin: 0 1rem 0.75rem 1rem;
 }
 
 .post-item {
@@ -22,7 +22,7 @@
 }
 
 .post-item-image {
-  margin-right: 20px;
+  margin-right: 1.5rem;
   flex-shrink: 0;
   width: 196px;
   height: 144px;
@@ -30,7 +30,7 @@
   background-position: center center;
   background-size: cover;
   border: #fff 5px solid;
-  box-shadow: 0 2px 4px #777;
+  box-shadow: 0 1px 6px rgba(40, 40, 40, 0.5);
 }
 .post-item-image a {
   display: block;
@@ -39,13 +39,9 @@
   text-decoration: none;
 }
 
-.post-item-text {
-  margin-bottom: 10px;
-}
-
 .post-item-title {
   font-weight: bold;
-  margin: 10px 0;
+  margin: 0 0 0.5em 0;
 }
 .post-item-title a {
   text-decoration: none;

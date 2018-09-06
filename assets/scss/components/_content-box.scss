@@ -1,0 +1,12 @@
+.content-box {
+  width: 75%;
+  max-width: 56rem;
+  margin: 6rem auto;
+  background: #fff;
+  color: #383838;
+  padding: $content-box-padding-top $content-box-padding;
+  border-radius: $content-box-border-radius;
+  box-shadow: 0 0 16px 0 rgba(40,40,40,0.3);
+
+  animation: fadeIn 1s;
+}

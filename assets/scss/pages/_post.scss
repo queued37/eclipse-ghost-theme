@@ -1,10 +1,10 @@
 .post-header {
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 .post-header h1 {
-  margin: 1.2em 0 0.7em 0;
-  font-size: 2.2em;
+  margin: 2rem 0 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 .post-header time {
@@ -12,17 +12,17 @@
   margin: 1em 0;
 }
 .post-header .post-reading-time {
-  font-size: 13px;
+  font-size: 0.8rem;
 }
 
 .post-header .feature-image {
-  padding: 10em 7.5em;
-  margin: -30px -60px 0 -60px;
+  padding: 10rem 7rem;
+  margin: (-$content-box-padding-top) (-$content-box-padding) 0 (-$content-box-padding);
   background-color: rgba(0,0,0,0.6);
   background-blend-mode: multiply;
   background-position: center center;
   background-size: cover;
-  border-radius: 3px 3px 0 0;
+  border-radius: $content-box-border-radius $content-box-border-radius 0 0;
   color: #efefef;
 }
 
@@ -33,7 +33,7 @@
 /* footer */
 .post-tags-share {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
 }
 
 .post-tags {
